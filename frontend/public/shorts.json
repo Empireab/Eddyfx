@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "title": "Hot New Track",
+        "platform": "TikTok",
+        "thumbnail": "🎵",
+        "url": "https://www.tiktok.com/@eddyfx",
+        "description": "Check out my latest hit on TikTok"
+    },
+    {
+        "id": 2,
+        "title": "Live Performance",
+        "platform": "Instagram",
+        "thumbnail": "🎤",
+        "url": "https://www.instagram.com/eddyfx",
+        "description": "Behind the scenes performance"
+    },
+    {
+        "id": 3,
+        "title": "Studio Session",
+        "platform": "Facebook",
+        "thumbnail": "🎧",
+        "url": "https://www.facebook.com/eddyfx",
+        "description": "Studio recording session"
+    },
+    {
+        "id": 4,
+        "title": "Music Production",
+        "platform": "TikTok",
+        "thumbnail": "🎹",
+        "url": "https://www.tiktok.com/@eddyfx",
+        "description": "Watch how I create my beats"
+    },
+    {
+        "id": 5,
+        "title": "Fan Reactions",
+        "platform": "Instagram",
+        "thumbnail": "😍",
+        "url": "https://www.instagram.com/eddyfx",
+        "description": "Fans reacting to new release"
+    },
+    {
+        "id": 6,
+        "title": "Quick Tips",
+        "platform": "Facebook",
+        "thumbnail": "💡",
+        "url": "https://www.facebook.com/eddyfx",
+        "description": "Music production tips"
+    }
+]

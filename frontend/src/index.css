@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    @apply bg-dark-bg text-dark-text font-sans;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1f3a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #5b6ef5;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #7c8eff;
+}
+
+/* Utility classes */
+.container-custom {
+    @apply max-w-7xl mx-auto px-4 md:px-6 lg:px-8;
+}
+
+.glass-effect {
+    @apply bg-white bg-opacity-10 backdrop-blur-md rounded-lg border border-white border-opacity-20;
+}
+
+.gradient-text {
+    @apply bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent;
+}
+
+.btn-primary {
+    @apply px-6 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg font-semibold transition-colors duration-300;
+}
+
+.btn-secondary {
+    @apply px-6 py-2 bg-dark-card hover:bg-opacity-80 rounded-lg font-semibold border border-blue-500 transition-all duration-300;
+}
+
+.card-hover {
+    @apply hover:shadow-lg hover:scale-105 transition-all duration-300;
+}

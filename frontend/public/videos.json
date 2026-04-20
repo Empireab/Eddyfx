@@ -1,0 +1,18 @@
+[
+    {
+        "id": "video-1",
+        "title": "Professor",
+        "thumbnail": "https://img.youtube.com/vi/MQGLX_AfoDg/maxresdefault.jpg",
+        "youtubeLink": "https://www.youtube.com/watch?v=MQGLX_AfoDg",
+        "description": "Song by Eddy Fx ft Leo Fx and Alamano",
+        "ratings": []
+    },
+    {
+        "id": "video-2",
+        "title": "Another Video",
+        "thumbnail": "https://via.placeholder.com/300x200?text=Video+Thumbnail+2",
+        "youtubeLink": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "description": "This is another example video",
+        "ratings": []
+    }
+]
