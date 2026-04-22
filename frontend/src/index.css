@@ -42,7 +42,7 @@ body {
 }
 
 .glass-effect {
-    @apply bg-white bg-opacity-10 backdrop-blur-md rounded-lg border border-white border-opacity-20;
+    @apply bg-dark-bg bg-opacity-90 backdrop-blur-md rounded-lg;
 }
 
 .gradient-text {
