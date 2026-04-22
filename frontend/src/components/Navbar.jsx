@@ -24,10 +24,10 @@ export default function Navbar() {
                     {/* Logo */}
                     <Link to="/" className="flex items-center">
                         <motion.img
-                            src="/logo.svg"
+                            src="/edddylogo.jpeg"
                             alt="Logo"
                             whileHover={{ scale: 1.05 }}
-                            className="h-16 w-auto"
+                            className="h-16 w-auto rounded-full"
                         />
                     </Link>
 

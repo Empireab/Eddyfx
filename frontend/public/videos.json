@@ -9,10 +9,10 @@
     },
     {
         "id": "video-2",
-        "title": "Another Video",
-        "thumbnail": "https://via.placeholder.com/300x200?text=Video+Thumbnail+2",
-        "youtubeLink": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        "description": "This is another example video",
+        "title": "Packaging",
+        "thumbnail": "https://img.youtube.com/vi/59SVt0PeYmU/maxresdefault.jpg",
+        "youtubeLink": "https://youtube.com/shorts/59SVt0PeYmU?si=wDZF1_K_90jJ7lzH",
+        "description": "Song by Eddy fx",
         "ratings": []
     }
 ]

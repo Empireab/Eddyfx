@@ -1,46 +1,35 @@
-<svg viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
-  <rect width="400" height="120" fill="#0f172a" rx="10"/>
-  
-  <!-- Decorative elements - left side -->
-  <circle cx="30" cy="60" r="3" fill="#3b82f6" opacity="0.6"/>
-  <circle cx="30" cy="45" r="2" fill="#3b82f6" opacity="0.4"/>
-  <circle cx="30" cy="75" r="2" fill="#3b82f6" opacity="0.4"/>
-  
-  <!-- Main text with gradient effect -->
+<svg width="120" height="80" viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Oval background with gradient -->
   <defs>
-    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1f3a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0e27;stop-opacity:1" />
     </linearGradient>
     <filter id="glow">
-      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
       <feMerge>
         <feMergeNode in="coloredBlur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
   </defs>
-  
-  <!-- Main logo text -->
-  <text x="70" y="85" font-family="Arial, sans-serif" font-size="56" font-weight="bold" 
-        fill="url(#blueGradient)" letter-spacing="3" filter="url(#glow)">
-    EDDY
-  </text>
-  <text x="250" y="85" font-family="Arial, sans-serif" font-size="56" font-weight="bold" 
-        fill="#60a5fa" letter-spacing="2" style="font-style: italic;">
-    FX
-  </text>
-  
-  <!-- Decorative line under text -->
-  <line x1="70" y1="98" x2="330" y2="98" stroke="#3b82f6" stroke-width="2" opacity="0.7"/>
-  
-  <!-- Decorative elements - right side -->
-  <circle cx="370" cy="60" r="3" fill="#3b82f6" opacity="0.6"/>
-  <circle cx="370" cy="45" r="2" fill="#3b82f6" opacity="0.4"/>
-  <circle cx="370" cy="75" r="2" fill="#3b82f6" opacity="0.4"/>
-  
-  <!-- Music note accent -->
-  <path d="M 355 35 Q 360 30 365 35 L 365 50 Q 365 55 360 55 Q 355 55 355 50" 
-        fill="none" stroke="#3b82f6" stroke-width="2" opacity="0.6"/>
+
+  <!-- Oval shape -->
+  <ellipse cx="60" cy="40" rx="55" ry="35" fill="url(#logoGradient)" stroke="#00d4ff" stroke-width="2" filter="url(#glow)"/>
+
+  <!-- Microphone icon -->
+  <g transform="translate(45,20)">
+    <!-- Mic body -->
+    <rect x="5" y="15" width="10" height="25" rx="5" fill="#00d4ff"/>
+    <!-- Mic head -->
+    <circle cx="10" cy="10" r="8" fill="#00d4ff"/>
+    <!-- Mic stand -->
+    <rect x="8" y="40" width="4" height="15" fill="#00d4ff"/>
+    <rect x="2" y="50" width="16" height="4" fill="#00d4ff"/>
+  </g>
+
+  <!-- Sound waves -->
+  <path d="M85 25 Q90 20 90 25 Q90 30 85 25" stroke="#00d4ff" stroke-width="2" fill="none" opacity="0.8"/>
+  <path d="M85 35 Q92 28 92 35 Q92 42 85 35" stroke="#00d4ff" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M85 45 Q95 35 95 45 Q95 55 85 45" stroke="#00d4ff" stroke-width="2" fill="none" opacity="0.4"/>
 </svg>
