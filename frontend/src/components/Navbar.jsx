@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false)
@@ -74,28 +74,37 @@ export default function Navbar() {
                 </div>
 
                 {/* Mobile Menu */}
-                {isOpen && (
-                    <motion.div
-                        initial={{ opacity: 0, y: -10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -10 }}
-                        className="md:hidden pb-4 space-y-2"
-                    >
-                        {navLinks.map((link) => (
-                            <Link
-                                key={link.path}
-                                to={link.path}
-                                onClick={() => setIsOpen(false)}
-                                className={`block px-4 py-2 rounded-lg ${isActive(link.path)
-                                    ? 'bg-blue-600 text-white'
-                                    : 'hover:bg-dark-card'
-                                    }`}
-                            >
-                                {link.label}
-                            </Link>
-                        ))}
-                    </motion.div>
-                )}
+                <AnimatePresence>
+                    {isOpen && (
+                        <motion.div
+                            initial={{ opacity: 0, height: 0 }}
+                            animate={{ opacity: 1, height: 'auto' }}
+                            exit={{ opacity: 0, height: 0 }}
+                            transition={{ duration: 0.3, ease: 'easeInOut' }}
+                            className="md:hidden pb-4 space-y-2 overflow-hidden"
+                        >
+                            {navLinks.map((link) => (
+                                <motion.div
+                                    key={link.path}
+                                    initial={{ opacity: 0, x: -20 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    transition={{ delay: 0.1 * navLinks.indexOf(link) }}
+                                >
+                                    <Link
+                                        to={link.path}
+                                        onClick={() => setIsOpen(false)}
+                                        className={`block px-4 py-2 rounded-lg ${isActive(link.path)
+                                            ? 'bg-blue-600 text-white'
+                                            : 'hover:bg-dark-card'
+                                            }`}
+                                    >
+                                        {link.label}
+                                    </Link>
+                                </motion.div>
+                            ))}
+                        </motion.div>
+                    )}
+                </AnimatePresence>
             </div>
         </nav>
     )
