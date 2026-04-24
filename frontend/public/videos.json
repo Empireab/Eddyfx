@@ -14,5 +14,29 @@
         "youtubeLink": "https://youtube.com/shorts/59SVt0PeYmU?si=wDZF1_K_90jJ7lzH",
         "description": "Song by Eddy fx",
         "ratings": []
+    },
+    {
+        "id": "video-3",
+        "title": "unto the next remix",
+        "thumbnail": "https://img.youtube.com/vi/Mr8UlVYoxyI/maxresdefault.jpg",
+        "youtubeLink": "https://youtube.com/shorts/Mr8UlVYoxyI?si=odItEH7J18A71Eux",
+        "description": "remix by Eddy fx",
+        "ratings": []
+    },
+    {
+        "id": "video-4",
+        "title": "let's go remix",
+        "thumbnail": "https://img.youtube.com/vi/J5KTP5QsOK8/maxresdefault.jpg",
+        "youtubeLink": "https://youtube.com/shorts/J5KTP5QsOK8?si=jswLfuGZxuSOpfB0",
+        "description": "remix by Eddy fx",
+        "ratings": []
+    },
+    {
+        "id": "video-5",
+        "title": "Alright",
+        "thumbnail": "https://img.youtube.com/vi/QrR490JA6mY/maxresdefault.jpg",
+        "youtubeLink": "https://youtube.com/shorts/QrR490JA6mY?si=HllcjYFikcnYBxiz",
+        "description": "Song by Eddy Fx Pablo scraa ",
+        "ratings": []
     }
 ]

@@ -10,7 +10,18 @@ export default function ShortClipCard({ clip }) {
         >
             {/* Thumbnail Preview */}
             <div className="relative w-full h-48 bg-dark-bg flex items-center justify-center overflow-hidden group">
-                <div className="text-7xl">{clip.thumbnail}</div>
+                {clip.thumbnail.startsWith('http') ? (
+                    <img
+                        src={clip.thumbnail}
+                        alt={clip.title}
+                        className="w-full h-full object-cover"
+                        onError={(e) => {
+                            e.target.style.display = 'none';
+                            e.target.nextSibling.style.display = 'block';
+                        }}
+                    />
+                ) : null}
+                <div className={`text-7xl ${clip.thumbnail.startsWith('http') ? 'hidden' : ''}`}>{clip.thumbnail || '🎵'}</div>
                 {/* Hover Overlay */}
                 <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center">
                     <motion.a

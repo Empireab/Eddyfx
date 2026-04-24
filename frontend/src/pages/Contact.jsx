@@ -115,7 +115,7 @@ export default function Contact() {
                                     <span className="text-2xl">📧</span> Email
                                 </h3>
                                 <p className="text-dark-text text-opacity-70">
-                                    contact@eddyfx.com
+                                    eddychamp56@gmail.com
                                 </p>
                             </div>
 
@@ -127,7 +127,7 @@ export default function Contact() {
                                     Chat with me on WhatsApp
                                 </p>
                                 <a
-                                    href="https://wa.me/2340806272432"
+                                    href="https://wa.me/2347051766199"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="inline-block px-4 py-2 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg transition-colors"
@@ -245,7 +245,7 @@ export default function Contact() {
                                     name="name"
                                     value={formData.name}
                                     onChange={handleChange}
-                                    placeholder="John Doe"
+                                    placeholder="your full name"
                                     className="w-full px-4 py-3 bg-dark-bg border border-blue-500 border-opacity-30 rounded-lg focus:outline-none focus:border-blue-400 transition-colors"
                                     disabled={isLoading}
                                 />
@@ -262,7 +262,7 @@ export default function Contact() {
                                     name="email"
                                     value={formData.email}
                                     onChange={handleChange}
-                                    placeholder="john@example.com"
+                                    placeholder="your email address"
                                     className="w-full px-4 py-3 bg-dark-bg border border-blue-500 border-opacity-30 rounded-lg focus:outline-none focus:border-blue-400 transition-colors"
                                     disabled={isLoading}
                                 />

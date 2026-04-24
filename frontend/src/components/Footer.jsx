@@ -2,10 +2,10 @@ import { motion } from 'framer-motion'
 
 export default function Footer() {
     const socialLinks = [
-        { icon: '📲', name: 'Instagram', url: 'https://instagram.com' },
-        { icon: '🎵', name: 'TikTok', url: 'https://tiktok.com' },
-        { icon: '🔊', name: 'Audiomack', url: 'https://audiomack.com' },
-        { icon: '📹', name: 'YouTube', url: 'https://youtube.com' },
+        { icon: '📲', name: 'Instagram', url: 'https://www.instagram.com/real.eddyfx?igsh=eHg3MDJhMHJpZGhu' },
+        { icon: '🎵', name: 'TikTok', url: 'https://www.tiktok.com/@real.eddyfx?_r=1&_t=ZS-95o0qgTcRHT' },
+        { icon: '🔊', name: 'Audiomack', url: 'https://audiomack.com/eddychamp56' },
+        { icon: '📹', name: 'YouTube', url: 'https://youtube.com/@real.eddyfx?si=cMk-vDA3L13TxMOK' },
     ]
 
     const currentYear = new Date().getFullYear()
